@@ -1,0 +1,111 @@
+.navbar {
+
+  position: fixed;
+
+  top: 25px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+
+  padding: 16px 28px;
+
+  background: rgba(15, 15, 18, 0.55);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 999px;
+
+  z-index: 1000;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.35);
+}
+
+/* Logo */
+
+.navbar h1 {
+
+  font-size: 0.9rem;
+
+  color: white;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  white-space: nowrap;
+}
+
+/* Links */
+
+.nav-links {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.nav-links a {
+
+  position: relative;
+
+  text-decoration: none;
+
+  color: #d4d4d8;
+
+  font-size: 0.95rem;
+
+  transition: 0.3s ease;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+}
+
+/* Hover elegante */
+
+.nav-links a:hover {
+
+  color: #facc15;
+
+  background: rgba(255,255,255,0.05);
+}
+
+/* Línea hover */
+
+.nav-links a::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 2px;
+
+  transform: translateX(-50%);
+
+  width: 0%;
+
+  height: 1px;
+
+  background: #facc15;
+
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+
+  width: 60%;
+}
